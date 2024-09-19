@@ -16,6 +16,10 @@ public class TestRunner {
     private static Class aClass;
     private static Object obj = new Object();
 
+    public static void  main(String[] args) throws Exception {
+        TestRunner.runTests(TestBook.class);
+    }
+
     static void runTests(Class c) throws Exception {
         TestRunner.aClass = c;
 

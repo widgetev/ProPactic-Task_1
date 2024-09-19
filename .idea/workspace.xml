@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0797a66-a70c-4fcf-9a02-7faf082db5e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c0797a66-a70c-4fcf-9a02-7faf082db5e4" name="Changes" comment="Исправления по замечаниям с ревью">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dl/pro/java/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dl/pro/java/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +58,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dl.pro.java.Main" />
+    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dl.pro.java.TestRunner" />
       <module name="Task_1" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -87,14 +86,27 @@
       <option name="presentableId" value="Default" />
       <updated>1726457519329</updated>
       <workItem from="1726457520429" duration="9819000" />
-      <workItem from="1726716449754" duration="2468000" />
+      <workItem from="1726716449754" duration="3679000" />
     </task>
+    <task id="LOCAL-00001" summary="Исправления по замечаниям с ревью">
+      <option name="closed" value="true" />
+      <created>1726718984730</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726718984730</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Исправления по замечаниям с ревью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправления по замечаниям с ревью" />
   </component>
 </project>
