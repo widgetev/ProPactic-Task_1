@@ -1,7 +1,6 @@
 package dl.pro.java;
 
 import java.lang.annotation.Annotation;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -14,25 +13,20 @@ public class TestRunner {
     private final static List<Method> beforeTests = new ArrayList();
     private final static List<Method> afterTests = new ArrayList();
     private final static Map<Integer,ArrayList<Method>> test = new HashMap();
-    private final static List<Constructor> constructors = new ArrayList();
-    private final Class aClass;
+    private static Class aClass;
     private static Object obj = new Object();
 
-    public TestRunner(Class aClass) {
-        this.aClass = aClass;
-    }
-
     static void runTests(Class c) throws Exception {
+        TestRunner.aClass = c;
 
-        TestRunner testRunner=new TestRunner(c);
-        testRunner.prepareLists();
-        obj = constructors.get(0).newInstance(); //Да, могут быть разные. Но сейчас это опустим
-        testRunner.runByList(beforeSuite);
-        testRunner.runByMapPriority(test);
-        testRunner.runByList(afterSuite);
+        TestRunner.prepareLists();
+        obj = c.getConstructor().newInstance();
+        TestRunner.runByList(beforeSuite);
+        TestRunner.runByMapPriority(test);
+        TestRunner.runByList(afterSuite);
     }
 
-    private void runByMapPriority(Map<Integer,ArrayList<Method>> map) throws InvocationTargetException, IllegalAccessException {
+    private static void runByMapPriority(Map<Integer,ArrayList<Method>> map) throws InvocationTargetException, IllegalAccessException {
         Set<Integer> keys = map.keySet();
         Object[] args = new Object[0];//Пока без параметров
         keys.stream().sorted().forEach( it ->
@@ -53,7 +47,7 @@ public class TestRunner {
         );
     }
 
-    private void runByList(List<Method> list) throws InvocationTargetException, IllegalAccessException {
+    private static void runByList(List<Method> list) throws InvocationTargetException, IllegalAccessException {
         Object[] args = new Object[0];//Пока только без параметров
         for (Method method: list) {
             method.setAccessible(true); //а если он не public?
@@ -61,13 +55,8 @@ public class TestRunner {
         }
     }
 
-    private void prepareLists() throws Exception {
-        /*Констуркторы отдельно. Не буду проверять*/
-        for (Constructor constructor : aClass.getDeclaredConstructors()) {
-            constructors.add(constructor);
-        }
-
-        /*Все прочие методы*/
+    private static void prepareLists() throws Exception {
+         /*Все прочие методы*/
         for (Method method : aClass.getDeclaredMethods()) {
             for (Annotation anotation : method.getDeclaredAnnotations()) {
                 if (anotation instanceof Test) {
@@ -84,16 +73,14 @@ public class TestRunner {
                     checkSuiteAnnotation(afterSuite, method, anotation);
                 } else if(anotation instanceof BeforeTest) {
                     checkSuiteAnnotation(beforeTests, method, anotation);
-                    //beforeTests.add(method);
                 } else if(anotation instanceof AfterTest) {
                     checkSuiteAnnotation(afterTests, method, anotation);
-                    //afterTests.add(method);
                 }
             }
         }
     }
 
-    private void checkSuiteAnnotation(List<Method> list, Method method, Annotation annotation) throws Exception {
+    private static void checkSuiteAnnotation(List<Method> list, Method method, Annotation annotation) throws Exception {
         if(!Modifier.isStatic(method.getModifiers()))
             throw new Exception(annotation.annotationType().getSimpleName()+ " Применима только к static методам");
         if (list.isEmpty())

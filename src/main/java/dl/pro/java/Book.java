@@ -47,7 +47,7 @@ public class Book {
     }
 
     public String getName() {
-        return "Назваие : " + name;
+        return "Название : " + name;
     }
 
     public String getDescription() {

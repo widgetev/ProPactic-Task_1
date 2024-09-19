@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0797a66-a70c-4fcf-9a02-7faf082db5e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/AfterSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/BeforeSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dl/pro/java/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dl/pro/java/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +26,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2m8U5ydeJtNK2PUESZds8IvkrnE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,6 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/IDE/ws/maven/JavaPro/Task_1/Task_1/src/main/java/dl/pro/java/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
@@ -93,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726457519329</updated>
       <workItem from="1726457520429" duration="9819000" />
+      <workItem from="1726716449754" duration="2468000" />
     </task>
     <servers />
   </component>
